@@ -1,5 +1,3 @@
-#some change
-
 terraform {
   required_providers {
     azurerm = {
@@ -8,10 +6,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "StorageRG"
+    resource_group_name  = "StorageRG"
     storage_account_name = "taskboardstoragedev123"
-    container_name = "taskboardcontainer"
-    key = "terraform.tfstate"
+    container_name       = "taskboardcontainer"
+    key                  = "terraform.tfstate"
   }
 }
 
@@ -74,8 +72,8 @@ resource "azurerm_mssql_database" "mssqldb" {
   max_size_gb          = 2
   sku_name             = "S0"
   zone_redundant       = false
-  storage_account_type = "Zone"
-  geo_backup_enabled   = false
+  # storage_account_type = "Zone"
+  # geo_backup_enabled   = false
 }
 
 resource "azurerm_mssql_firewall_rule" "firewallrule" {
