@@ -74,8 +74,8 @@ resource "azurerm_mssql_database" "mssqldb" {
   max_size_gb          = 2
   sku_name             = "S0"
   zone_redundant       = false
-  storage_account_type = "Zone"
-  geo_backup_enabled   = false
+  # storage_account_type = "Zone"
+  # geo_backup_enabled   = false
 }
 
 resource "azurerm_mssql_firewall_rule" "firewallrule" {

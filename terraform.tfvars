@@ -1,5 +1,5 @@
 resource_group_name     = "taskBoardRG"
-resource_group_location = "Poland Central"
+resource_group_location = "northeurope"
 app_service_plan_name   = "taskboardsp123"
 app_service_name        = "taskboarddevopsazure123"
 sql_server_name         = "taskboardsqlservername123"
